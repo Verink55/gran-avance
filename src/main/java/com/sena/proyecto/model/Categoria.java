@@ -31,8 +31,8 @@ public class Categoria {
     private String nombre;
 
     @NotEmpty
-    @Size(min=28,max=55)
-    @Column(length = 55, nullable=false)
+    @Size(min=8,max=28)
+    @Column(length = 28, nullable=false)
     private String descripcion;
 
 

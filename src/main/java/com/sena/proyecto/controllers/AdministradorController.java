@@ -64,13 +64,13 @@ public class AdministradorController {
 		return "administrador/cliente";
 	} 
 
-	@GetMapping("/domiciliarios")
+	@GetMapping("/domiciliario")
 	public String domiciliario(Model model) {
 		model.addAttribute("domiciliario", domiciliarioService.findAll());
 		return "administrador/domiciliarios";
 	} 
 
-	@GetMapping("/domicilios")
+	@GetMapping("/domicilio")
 	public String domicilio(Model model) {
 		model.addAttribute("domicilio", domicilioService.findAll());
 		return "administrador/domicilios";
